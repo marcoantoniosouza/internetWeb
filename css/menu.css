@@ -27,6 +27,12 @@ html, body {
 	font-family: verdana;
 }
 
+a{
+	color: white;
+	font-family: verdana;
+	text-decoration: none;
+}
+
 .menuItem:hover{
 	background: #999;
 }

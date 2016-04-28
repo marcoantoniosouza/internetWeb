@@ -1,21 +1,29 @@
 <html>
 	<head>
 		<title>Internet Web</title>
-		<link rel="stylesheet" type="text/css" href="menu.css">
-		<link rel="stylesheet" type="text/css" href="corpo.css">
-
+		<link rel="stylesheet" type="text/css" href="css/menu.css">
+		<link rel="stylesheet" type="text/css" href="css/corpo.css">
+		<meta charset="UTF-8">
+		<script type="text/javascript" src="js/tarefas.js"></script>
+		<script type="text/javascript" src="js/menu.js"></script>
 	</head>
 
 	<body>
 		<!-- menu -->
 		<div class="menu">
-			<iframe src="menu.html"></iframe>
+			<ul class="menuBar">
+				<li id="espaco" class="menuItem"><a></a></li>
+				<li class="menuItem"><a onclick="inicial()" href="javascript:void(0);">Home</a></li>
+				<li class="menuItem"><a onclick="tarefas()" href="javascript:void(0);">Tarefas</a></li>
+				<li class="menuItem"><a>Contact</a></li>
+				<li class="menuItem"><a>About</a></li>
+			</ul>
 		</div>
 		<!-- menu -->
 
 		<!-- corpo -->
 		<div class="corpo">
-			<iframe src="lorem.html"></iframe>
+			<iframe id="corpoIndex" src="inicial.html"></iframe>
 		</div>
 		<!-- corpo -->
 
