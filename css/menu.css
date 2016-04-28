@@ -15,11 +15,12 @@ html, body {
 	margin: 0;
 	min-height: 39px;
 	background-color: #555;
-	overflow: hidden;
 	z-index: -1;
 }
 
 .menuItem{
+	text-align: center;
+	cursor: default;
 	position: relative;
 	padding: 10px;
 	float: left;
@@ -29,15 +30,11 @@ html, body {
 	border: none;
 	font-family: verdana;
 	font-size: 16;
+	z-index: 2;
 }
 
 a{
-	color: white;
-	font-family: verdana;
-	text-decoration: none;
-}
-
-.menuItem a{
+	cursor: default;
 	color: white;
 	font-family: verdana;
 	text-decoration: none;
@@ -77,14 +74,20 @@ a{
 .dropdown a {
 	padding: 10px;
     float: none;
-    color: black;
-    color: white;
-	font-family: verdana;
-	text-decoration: none;
     display: block;
 }
 
 .dropdown a:hover {
+	background-color: #999
+}
+
+.dropdown button {
+	padding: 10px;
+    float: none;
+    display: block;
+}
+
+.dropdown button:hover {
 	background-color: #999
 }
 

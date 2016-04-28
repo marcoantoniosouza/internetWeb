@@ -1,7 +1,11 @@
-function tarefas() {
+function addTarefa(){
+	document.getElementById('corpoIndex').src = "adicionarTarefas.html";
+}
+
+function tarefas(){
 	document.getElementById('corpoIndex').src = "tarefas.html";
 }
 
-function inicial() {
+function inicial(){
 	document.getElementById('corpoIndex').src = "inicial.html";
 }

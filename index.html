@@ -4,22 +4,27 @@
 		<link rel="stylesheet" type="text/css" href="css/menu.css">
 		<link rel="stylesheet" type="text/css" href="css/corpo.css">
 		<meta charset="UTF-8">
-		<script type="text/javascript" src="js/tarefas.js"></script>
 		<script type="text/javascript" src="js/menu.js"></script>
+		<script type="text/javascript">
+			if (parent !== self) {
+    			parent.location = location;
+			}
+		</script>
 	</head>
 
 	<body>
 		<!-- menu -->
 		<div class="menuBar"></div>
 		<div class="menu">
-			<button class="menuItem" onclick="inicial()" href="javascript:void(0);">Home</button>
-			<button class="menuItem" onclick="tarefas()" href="javascript:void(0);">Tarefas
+			<li class="menuItem" onclick="inicial()" href="javascript:void(0)">Home</li>
+			<li class="menuItem"><a onclick="tarefas()" href="javascript:void(0)">Tarefas</a>
 				<div class="dropdown">
-					<a href="#">Adicionar</a>
+					<a onclick="addTarefa()" href="javascript:void(0)">Adicionar</a>
 					<a href="#">Excluir</a>
-				</div></button>
-			<button class="menuItem">Contact</button>
-			<button class="menuItem">About</button>
+				</div>
+			</li>
+			<li class="menuItem">Contact</li>
+			<li class="menuItem">About</li>
 			
 		</div>
 		<!-- menu -->

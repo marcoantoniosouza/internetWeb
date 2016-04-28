@@ -7,5 +7,16 @@
 	height: 90%;
 	overflow-x: hidden;
 	overflow-y: hidden;
-	z-index: -1;
+}
+
+input[type=checkbox] + label a{
+	color: black;
+	text-decoration: none;
+	font-family: verdana;
+}
+
+input[type=checkbox]:checked + label a{
+	color: #ccc;
+	font-style: italic;
+	text-decoration: line-through;
 }
