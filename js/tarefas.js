@@ -5,7 +5,7 @@ function idFromUrl(){
 function getLista(){
 	listaTarefas = JSON.parse(sessionStorage.getItem('tarefas'));
 	if (listaTarefas==null){
-		listaTarefas = ["Adicione novas tarefas no menu TAREFAS >> ADICIONAR"];
+		listaTarefas = ["Altere o nome do usuário no menu USER >> ALTERAR USER","Altere ou exclua tarefas clicando nelas","Adicione novas tarefas no menu TAREFAS >> ADICIONAR"];
 		sessionStorage.setItem('tarefas', JSON.stringify(listaTarefas));
 	}
 	return listaTarefas;

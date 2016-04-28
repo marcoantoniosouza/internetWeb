@@ -36,7 +36,13 @@ html, body {
 
 #usuario{
 	float: right;
-	min-width: 150px;
+	min-width: 110px;
+}
+
+#sobre{
+	position: relative;
+	float: right;
+	min-width: 80px;
 }
 
 a{
@@ -70,7 +76,7 @@ a{
 .dropdown {
     display: none;
     position: absolute;
-    background-color: #555;
+    background-color: #DDD;
     top: 39px;
     left: 0;
     min-width: 100px;
@@ -81,6 +87,7 @@ a{
 	padding: 10px;
     float: none;
     display: block;
+    color: black;
 }
 
 .dropdown a:hover {

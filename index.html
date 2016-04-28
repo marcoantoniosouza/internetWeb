@@ -24,25 +24,31 @@
 					<a onclick="addTarefa()" href="javascript:void(0)">Adicionar</a>
 				</div>
 			</li>
-			<li class="menuItem" onclick="projeto()" href="javascript:void(0)">Projeto</li>
-			<li class="menuItem">Aluno</li>
-			<li class="menuItem">About</li>
+
+			<li class="menuItem" id="sobre">Sobre
+				<div class="dropdown">
+					<a onclick="projeto()" href="javascript:void(0)">Projeto</a>
+					<a onclick="aluno()" href="javascript:void(0)">Aluno</a>
+				</div>
+			</li>
 
 			<li class="menuItem" id="usuario" onclick="inicial()" href="javascript:void(0)"></li>
+
+
 			
 		</div>
 		<!-- menu -->
 
 		<!-- corpo -->
 		<div class="corpo">
-			<iframe id="corpoIndex" src="inicial.html"></iframe>
+			<iframe id="corpoIndex" src="tarefas.html"></iframe>
 		</div>
 		<!-- corpo -->
 
 
 		<script type="text/javascript">
 
-		var out = getUser() + "<div class='dropdown' id='usuario'><a onclick='inicial()' href='javascript:void(0)'>ALTERAR USUARIO</a></div>";
+		var out = getUser() + "<div class='dropdown' id='usuario'><a onclick='inicial()' href='javascript:void(0)'>ALTERAR USER</a></div>";
 
 		document.getElementById('usuario').innerHTML = out;
 
