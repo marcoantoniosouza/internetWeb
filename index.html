@@ -10,14 +10,17 @@
 
 	<body>
 		<!-- menu -->
+		<div class="menuBar"></div>
 		<div class="menu">
-			<ul class="menuBar">
-				<li id="espaco" class="menuItem"><a></a></li>
-				<li class="menuItem"><a onclick="inicial()" href="javascript:void(0);">Home</a></li>
-				<li class="menuItem"><a onclick="tarefas()" href="javascript:void(0);">Tarefas</a></li>
-				<li class="menuItem"><a>Contact</a></li>
-				<li class="menuItem"><a>About</a></li>
-			</ul>
+			<button class="menuItem" onclick="inicial()" href="javascript:void(0);">Home</button>
+			<button class="menuItem" onclick="tarefas()" href="javascript:void(0);">Tarefas
+				<div class="dropdown">
+					<a href="#">Adicionar</a>
+					<a href="#">Excluir</a>
+				</div></button>
+			<button class="menuItem">Contact</button>
+			<button class="menuItem">About</button>
+			
 		</div>
 		<!-- menu -->
 

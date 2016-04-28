@@ -4,30 +4,40 @@ html, body {
 
 .menu{
 	border: none;
-	position: absolute;
-	padding: 0;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 10px;
+	position: relative;
+	top: -39px;
+	margin-left: 0;
+	margin-right: 0;
+	float: top;
 }
 
-.menu iframe{
-	border: none;
-	width: 100%;
+.menuBar{
+	margin: 0;
+	min-height: 39px;
+	background-color: #555;
+	overflow: hidden;
+	z-index: -1;
 }
 
 .menuItem{
-	display: inline;
-	float: left;
-	display: block;
+	position: relative;
 	padding: 10px;
+	float: left;
+	display: inline-block;
 	background: #555;
 	color: white;
+	border: none;
 	font-family: verdana;
+	font-size: 16;
 }
 
 a{
+	color: white;
+	font-family: verdana;
+	text-decoration: none;
+}
+
+.menuItem a{
 	color: white;
 	font-family: verdana;
 	text-decoration: none;
@@ -37,14 +47,47 @@ a{
 	background: #999;
 }
 
-.menuBar{
-	list-style-type: none;
-	margin: 0;
+.menuItem ul{
+	list-style: none;
+	display: none;
+	position: relative;
+	left: 0;
 	padding: 0;
 	background-color: #555;
-	overflow: hidden;
 }
 
-#espaco{
-	width: 20px;
+.menuItem ul li{
+	float: none;
+}
+
+.menu:hover ul, .menuItem ul li:hover ul, .menuItem:hover ul{
+	display: block;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #555;
+    top: 39px;
+    left: 0;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown a {
+	padding: 10px;
+    float: none;
+    color: black;
+    color: white;
+	font-family: verdana;
+	text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+	background-color: #999
+}
+
+.menuItem:hover .dropdown {
+    display: block;
 }

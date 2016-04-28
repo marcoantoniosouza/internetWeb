@@ -2,8 +2,10 @@
 	border: none;
 	position: absolute;
 	top: 50;
+	left: 0;
 	width: 99%;
 	height: 90%;
 	overflow-x: hidden;
 	overflow-y: hidden;
+	z-index: -1;
 }
