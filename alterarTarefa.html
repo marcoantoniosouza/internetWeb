@@ -1,0 +1,16 @@
+<meta charset="UTF-8">
+<script type="text/javascript" src="js/tarefas.js"></script>
+<link rel="stylesheet" type="text/css" href="css/corpo.css">
+
+<input type='text' id='descTarefa' name='descTarefa' placeholder="Tarefa" />
+<br>
+<button class="linkButtonGreen" onclick="updateTarefa(i, descTarefa.value)" value="Adicionar">ALTERAR</button>
+
+<button class="linkButtonRed" onclick="redirecionar()" value="Adicionar">CANCELAR</button>
+
+<script type="text/javascript">
+
+var i = decodeURIComponent(idFromUrl());
+
+document.getElementById('descTarefa').value = i;
+</script>

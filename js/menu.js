@@ -9,3 +9,7 @@ function tarefas(){
 function inicial(){
 	document.getElementById('corpoIndex').src = "inicial.html";
 }
+
+function projeto(){
+	document.getElementById('corpoIndex').src = "projeto.html";
+}

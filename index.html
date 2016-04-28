@@ -5,6 +5,9 @@
 		<link rel="stylesheet" type="text/css" href="css/corpo.css">
 		<meta charset="UTF-8">
 		<script type="text/javascript" src="js/menu.js"></script>
+		<script type="text/javascript" src="js/user.js"></script>
+		<script type="text/javascript" src="js/tarefas.js"></script>
+
 		<script type="text/javascript">
 			if (parent !== self) {
     			parent.location = location;
@@ -16,15 +19,16 @@
 		<!-- menu -->
 		<div class="menuBar"></div>
 		<div class="menu">
-			<li class="menuItem" onclick="inicial()" href="javascript:void(0)">Home</li>
 			<li class="menuItem"><a onclick="tarefas()" href="javascript:void(0)">Tarefas</a>
 				<div class="dropdown">
 					<a onclick="addTarefa()" href="javascript:void(0)">Adicionar</a>
-					<a href="#">Excluir</a>
 				</div>
 			</li>
-			<li class="menuItem">Contact</li>
+			<li class="menuItem" onclick="projeto()" href="javascript:void(0)">Projeto</li>
+			<li class="menuItem">Aluno</li>
 			<li class="menuItem">About</li>
+
+			<li class="menuItem" id="usuario" onclick="inicial()" href="javascript:void(0)"></li>
 			
 		</div>
 		<!-- menu -->
@@ -34,6 +38,15 @@
 			<iframe id="corpoIndex" src="inicial.html"></iframe>
 		</div>
 		<!-- corpo -->
+
+
+		<script type="text/javascript">
+
+		var out = getUser() + "<div class='dropdown' id='usuario'><a onclick='inicial()' href='javascript:void(0)'>ALTERAR USUARIO</a></div>";
+
+		document.getElementById('usuario').innerHTML = out;
+
+		</script>
 
 	</body>
 

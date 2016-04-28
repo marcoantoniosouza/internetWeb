@@ -1,6 +1,13 @@
 <meta charset="UTF-8">
 <script type="text/javascript" src="js/tarefas.js"></script>
+<script type="text/javascript" src="js/menu.js"></script>
+<link rel="stylesheet" type="text/css" href="css/corpo.css">
 
-<h1 id='tarefa'></h1>
+
+<table>
+	<tr class=headTable id='tarefa'></tr>
+	<tr><td id="sim"><button class="linkButtonGreen" onclick="altTarefa(getTarefa(idFromUrl()));">ALTERAR</button></td></tr>
+	<tr><td id="nao"><button class="linkButtonRed" onclick="excTarefa(getTarefa(idFromUrl()));">EXCLUIR</button></td></tr>
+</table>
 
 <script type="text/javascript">tarefa();</script>

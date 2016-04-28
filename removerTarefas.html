@@ -1,6 +1,16 @@
 <meta charset="UTF-8">
 <script type="text/javascript" src="js/tarefas.js"></script>
+<link rel="stylesheet" type="text/css" href="css/corpo.css">
 
-<table id='tarefas'></table>
+<table>
+	<tr><td colspan="2" class="headTable">Deseja realmente excluir</td></tr>
+	<tr><td colspan="2" class="headTable" id='tarefaNome'></td></tr>
+	<tr><td id="sim"><button class="linkButtonGreen" onclick="deleteTarefa(decodeURIComponent(idFromUrl()));">SIM</button></td>
+	<td id="nao"><button class="linkButtonRed" onclick="redirecionar();">NÃO</button></td></tr>
+</table>
 
-<script type="text/javascript">atualizar_lista();</script>
+<script type="text/javascript">
+
+
+document.getElementById('tarefaNome').innerHTML = decodeURIComponent(idFromUrl()) + "?";
+</script>

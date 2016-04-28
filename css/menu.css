@@ -9,6 +9,7 @@ html, body {
 	margin-left: 0;
 	margin-right: 0;
 	float: top;
+	min-width: 300px;
 }
 
 .menuBar{
@@ -31,6 +32,11 @@ html, body {
 	font-family: verdana;
 	font-size: 16;
 	z-index: 2;
+}
+
+#usuario{
+	float: right;
+	min-width: 150px;
 }
 
 a{
