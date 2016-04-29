@@ -4,34 +4,32 @@
 <script type="text/javascript" src="js/menu.js"></script>
 <script type="text/javascript" src="js/user.js"></script>
 
-<form>
-	<table>
-		<tr>
-			<td class="headTable" colspan="2">Perfil de Usuário</td>
-		</tr>
-		<tr class="dataList">
-			<td class="dataTitle">Nome: </td>
-			<td class="dataCont" id="nome"></td>
-		</tr>
-		<tr class="dataList">
-			<td class="dataTitle">Ano de Nascimento: </td>
-			<td class="dataCont" id="nasc"></td>
-		</tr>
-		<tr class="dataList">
-			<td class="dataTitle">Idade: </td>
-			<td class="dataCont" id="idade"></td>
-		</tr>
-		<tr>
-			<td colspan="2">
-				<input type="button" class="linkButtonGreen" onclick="altUser()" value="ALTERAR" />
-			</td>
-		</tr>
-	</table>
+<table>
+	<tr>
+		<td class="headTable" colspan="2">Perfil de Usuário</td>
+	</tr>
+	<tr class="dataList">
+		<td class="dataTitle">Nome: </td>
+		<td class="dataCont" id="nome"></td>
+	</tr>
+	<tr class="dataList">
+		<td class="dataTitle">Ano de Nascimento: </td>
+		<td class="dataCont" id="nasc"></td>
+	</tr>
+	<tr class="dataList">
+		<td class="dataTitle">Idade: </td>
+		<td class="dataCont" id="idade"></td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<input type="button" class="linkButtonGreen" onclick="altUser()" value="ALTERAR" />
+		</td>
+	</tr>
+</table>
 
-	<script type="text/javascript">
-		document.getElementById('nome').innerHTML = getUser();
-		document.getElementById('nasc').innerHTML = getNascimento();
-		document.getElementById('idade').innerHTML = getIdade();
+<script type="text/javascript">
+	document.getElementById('nome').innerHTML = getUser();
+	document.getElementById('nasc').innerHTML = getNascimento();
+	document.getElementById('idade').innerHTML = getIdade();
 
-	</script>
-</form>
+</script>
