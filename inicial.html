@@ -7,5 +7,9 @@
 <form>
 	<input type='text' name='nome' placeholder="DIGITE O NOME DE USUÁRIO" />
 	<br>
-	<input type="button" class="linkButtonGreen" onclick="cadastrarUser(nome.value)" value="SALVAR" />
+	<input type='text' name='nascimento' placeholder="DIGITE O ANO DE NASCIMENTO" maxlength="4" />
+	<br>
+	<input type='text' name='idade' placeholder="DIGITE A SUA IDADE" />
+	<br>
+	<input type="button" class="linkButtonGreen" onclick="cadastrarUser(nome.value, nascimento.value, idade.value)" value="SALVAR" />
 </form>

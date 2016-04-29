@@ -17,3 +17,7 @@ function projeto(){
 function aluno(){
 	document.getElementById('corpoIndex').src = "aluno.html";
 }
+
+function perfil(){
+	document.getElementById('corpoIndex').src = "perfilUser.html";
+}

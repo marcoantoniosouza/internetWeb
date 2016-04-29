@@ -25,6 +25,10 @@ tr.lista:nth-child(even){
 	background-color: #f2f2f2
 }
 
+tr.dataList:nth-child(odd){
+	background-color: #f2f2f2
+}
+
 tr.lista td{
 	width: 500px;
 }
@@ -52,11 +56,29 @@ input[type=checkbox]:checked + label a{
 }
 
 .headTable{
+	border-bottom: groove;
 	text-transform: uppercase;
 	text-align: center;
 	color: black;
 	font-family: verdana;
 	font-size: 20;
+}
+
+.dataTitle{
+	text-transform: uppercase;
+	text-align: left;
+	color: black;
+	font-family: verdana;
+	font-size: 14;
+	font-weight: bold;
+}
+
+.dataCont{
+	text-transform: uppercase;
+	text-align: left;
+	color: black;
+	font-family: verdana;
+	font-size: 14;
 }
 
 .linkButtonGreen{
